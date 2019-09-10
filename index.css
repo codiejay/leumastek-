@@ -167,7 +167,56 @@ header nav ul li::before{
 }
 
 .partners{ 
-    padding-top: 
+    padding: 30vh 4em;
+    height: 80vh;
+    background: url("./assets/patners.png");
+    background-size: 112%;
+    background-position-x: -45px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.partners::before{ 
+    width: 100px;
+    height: 100px;
+    background: url('./assets/setting.svg');
+    background-position: center;
+    background-size: contain;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    animation: rolling 2s infinite alternate-reverse ease-out;
+    
+
+}
+
+
+.partners h1{ 
+    color: white;
+    font-size: 4em;
+    font-family: var(--fontArchivo)
+}
+
+.partners p{ 
+    width: 38%;
+    font-family: var(--fontPoppins);
+    color: white;
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+
+.partners button{ 
+    background-color: white;
+    color: var(--mainColor);
+    font-size: 1.1em;
+    font-family: var(--fontArchivo);
+    border: 1px solid transparent;
+    margin-top: 1em;
+    padding: 1em 2em;
+    border-radius: 200px;
+    box-shadow: 0px 0px 9px 3px white;
 }
 
 
@@ -180,5 +229,16 @@ header nav ul li::before{
 
     to{ 
         height: 5%;
+    }
+}
+
+
+@keyframes rolling{ 
+    from{ 
+       transform: rotate(20deg)
+    }
+
+    to{ 
+        transform: rotate(360deg);
     }
 }
